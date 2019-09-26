@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: black;}
+
+#main div#pole{
+position: absolute;
+
+/*  display: flex;  centrowanie zawartosci
+  align-items: center;
+  justify-content: center; */
+
+/*  left: 50%;
+  top: 50%;
+  transform: translate(+50%,+20%) */
+
+
+ left: calc(50% - 250px);
+top: calc(50vh - 250px);
+
+
+/*  display: block;
+  margin-left: auto;
+  margin-right: auto; */
+
+  border: 1px solid white;
+  height: 500px;
+  width: 500px;
+  background-color: pink;
+}
+
+#kwadrat1,#kwadrat2,#kwadrat3,#kwadrat4,#kwadrat5,#kwadrat6,#kwadrat7,#kwadrat8,#kwadrat9{
+  float: left;
+  margin: 19px;
+  height: 125px;
+  width: 125px;
+  background-color: white;
+  border:1px solid black;
+}
+
+#kwadrat1:hover{
+  animation-name: kwadrato1;
+  animation-duration: 1s;
+}
+
+@keyframes kwadrato1 {
+  0% {background-color: white;}
+  50% {background-color: red;}
+  75% {background-color: yellow;}
+  100% {background-color: white;}
+  from {border:1px solid red;}
+  to {border:1px solid blue;}
+}
